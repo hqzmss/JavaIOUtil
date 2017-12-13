@@ -70,7 +70,7 @@ public class FileUtil {
      * @param regex 需要过滤的正则表达式
      * @return
      */
-    public static String[] getCurrentFileName3(String directory, String regex) {
+    public static String[] getCurrentFileName3(String directory, final String regex) {
         if(directory == null || directory.length() <=0 ) return null;
         File path = new File(directory);
         String[] list;
